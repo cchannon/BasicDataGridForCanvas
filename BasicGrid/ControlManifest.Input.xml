@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ktcs" constructor="BasicGridForCanvas" version="0.0.1" display-name-key="BasicGridForCanvas" description-key="A simple Fluent 9 datagrid with selectionmode controls for Canvas Apps" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <data-set name="dataset" display-name-key="dataset" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFind:true">
+    </data-set>
+    <property name="selectionMode" display-name-key="Selection Mode" description-key="Whether and how individual rows of the grid are Selectable" of-type="Enum" usage="input">
+      <value name="none" display-name-key="None">0</value>
+      <value name="single" display-name-key="Single">1</value>
+      <value name="multiselect" display-name-key="Multiple">2</value>
+    </property>
+    <property name="selectedItem" display-name-key="Selected Item" description-key="The item (in single selection mode) that is currently selected in the grid" of-type="SingleLine.Text" usage="output" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    </resources>
+  </control>
+</manifest>
