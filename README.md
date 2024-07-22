@@ -1,7 +1,7 @@
 # BasicDataGridForCanvas
 A simple Fluent v9 datagrid for canvas apps that allows for selectionmode control.
 
-![Basic Datagrid in a Canvas App](assets/demo.gif)
+![Basic Datagrid in a Canvas App](/Assets/demo.gif)
 
 ## Features
 - Theme responsiveness
